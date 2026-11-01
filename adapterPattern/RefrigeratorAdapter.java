@@ -1,12 +1,12 @@
-public class RefrigeratorAdapter implements PowerOutlet{
-    private Refrigerator fridge;
-
-    public RefrigeratorAdapter(Refrigerator fridge){
-        this.fridge = fridge;
+public class RefrigeratorAdapter implements PowerOutlet {
+    private final Refrigerator refrigerator;
+ 
+    public RefrigeratorAdapter(Refrigerator refrigerator) {
+        this.refrigerator = refrigerator;
     }
-
+ 
     @Override
-    public String plugIn(){
-        return startCooling();
+    public String plugIn() {
+        return refrigerator.startCooling();
     }
 }

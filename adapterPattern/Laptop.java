@@ -1,5 +1,5 @@
-public class Laptop{
-    public String charge(){
-        return "The laptop is now charging."
+public class Laptop {
+    public String charge() {
+        return "Laptop is charging (19V, 3.4A).";
     }
 }
